@@ -1,0 +1,131 @@
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+*.env
+!.env.example
+
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+
+# =========================
+# Java / Spring Boot / Maven
+# =========================
+target/
+**/target/
+.m2/
+.mvn/timing.properties
+
+*.class
+*.jar
+*.war
+*.ear
+
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+
+
+# =========================
+# Python / FastAPI
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+*.egg-info/
+
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+dist/
+build/
+.next/
+.vite/
+
+
+# =========================
+# IDEs
+# =========================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+
+# =========================
+# Local Databases / Data
+# =========================
+*.sqlite
+*.sqlite3
+*.db
+
+
+# =========================
+# AI / ML Artifacts
+# =========================
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+checkpoints/
+models/
+
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+
+# =========================
+# Coverage / Reports
+# =========================
+coverage/

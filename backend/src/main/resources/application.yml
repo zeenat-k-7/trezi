@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: trezi-backend
+
+  jackson:
+    default-property-inclusion: non_null
+
+  datasource:
+    url: ${TREZI_DB_URL:jdbc:postgresql://localhost:5432/trezi}
+    username: ${TREZI_DB_USERNAME:postgres}
+    password: ${TREZI_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+
+  flyway:
+    enabled: true
+    locations: filesystem:../database/flyway
+    baseline-on-migrate: false
+
+server:
+  port: ${TREZI_SERVER_PORT:8080}
+
+trezi:
+  jwt:
+    secret: ${TREZI_JWT_SECRET}
+    expiration-ms: ${TREZI_JWT_EXPIRATION_MS:86400000}
+  ai-service:
+    base-url: ${TREZI_AI_SERVICE_URL:http://localhost:8000}

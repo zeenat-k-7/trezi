@@ -1,0 +1,18 @@
+{
+  "project": "TREZI",
+  "database": "PostgreSQL",
+  "migration_tool": "Flyway",
+  "table_count": 24,
+  "embedding": {
+    "dimensions": 1536,
+    "metric": "cosine",
+    "index": "HNSW"
+  },
+  "money_type": "NUMERIC(15,2)",
+  "quantity_type": "NUMERIC(20,8)",
+  "id_type": "UUID",
+  "timestamp_type": "TIMESTAMPTZ UTC",
+  "application_db_access": "Spring Boot",
+  "ai_db_access": "No unrestricted direct access",
+  "frontend_db_access": "None"
+}
